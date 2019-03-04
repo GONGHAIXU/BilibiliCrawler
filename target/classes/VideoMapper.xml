@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="VideoMapper">
+    <insert id="insertVideo" parameterType="Video">
+        insert into video(allp,name,cover,author,introduction,playnum,barragenum,uploaddate,url,avid,barrage)
+            value(#{allP},#{name},#{cover},#{author},#{introduction},#{playNum},#{barrageNum},#{uploadDate},#{url},#{avId},#{barrage})
+    </insert>
+</mapper>
+
